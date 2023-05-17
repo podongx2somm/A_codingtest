@@ -1,0 +1,39 @@
+
+* List Comprehension:
+    * [ ( 변수를 활용한 값 ) for ( 사용할 변수 이름 ) in ( 순회할 수 있는 값 )]
+    * [I * 2 for i in range(size)]
+
+* heaps: Heap 자료구조 제공 - 우선순위 큐 기능 구현에 사용
+* bisect: 이진 탐색 기능 제공
+
+* 내장함수 중 sorted()
+    * sorted([n,n], reverse = True)
+    * with key:
+        * sorted(array, key=lambda x: x[1], reverse=True
+
+* Itertools:  파이썬에서 반복되는 형태의 데이터를 처리하기 위한 유용한 기능들 제공
+    * 순열: 서로다른 n개에서 서로다른 r개를 선택해 일렬로 나열하는 것
+    * 조합: 서로다른 n개에서 서로다른 r개를 순서에 상관없이 선택하는 것
+        * from itertools import combinations
+        * data = [‘A’, ‘B’, ‘C’]
+        * result = list(permutations(data,3)) == [(‘A’,’B’) …]
+        * result = list(combinations(data,2))
+        * print(result)
+        * [(‘A’,’B’), (‘A’, ‘C’), (‘B’,’C’)]
+
+* collections: 덱(duque), Counter 등 유용한 자료구조 제공
+    * from collections import deque
+    * from collections import Counter
+
+* Counter
+    * Iterable 객체에서 내부 원소가 몇번씩 등장했는지 확인가능
+    * Counter = Counter([‘red’, ‘blue’, ‘red’, ‘green’, ‘blue’, ‘blue’])
+    * count[‘blue’] == 3
+    * dict(counter) => 사전 자료형으로 => {‘red’:2, ‘blue’:3, ‘green’:1}
+
+* Math
+    * 각종 수학연산
+    * 최소 공약수(gcd) = math.gcd(a,b)
+    * 최소 공배수(lcd) = a * b // math.gcd(a, b)
+
+
